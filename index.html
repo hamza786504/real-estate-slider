@@ -10,8 +10,35 @@
 </head>
 
 <style>
+    .owl-carousel{
+        position: relative;
+    }
     .owl-nav{
-        display: none;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 0;
+        justify-content: space-between;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .owl-nav button{
+        font-size: 50px !important;
+        color: white !important;
+        background-color: black !important;
+        border: none !important;
+        height: 50px !important;
+        width: 40px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 0 40px 0 !important;
+        opacity: 1 !important;
+    }
+    .owl-nav span{
+        padding-bottom: 10px;
     }
 </style>
 
@@ -145,7 +172,7 @@
                     },
                     600: {
                         items: 3,
-                        nav: false
+                        nav: true
                     },
                     1000: {
                         items: 5,
